@@ -18,6 +18,7 @@ int main()
 	cout << endl << "2.Szyfr przestawieniowy" << endl;
 	cout << endl << "3.Szyfr podstawieniowy i przestawieniowy" << endl;
 	cout << endl << "4.Odszyfruj tekst" << endl;
+	cout << endl << "5.Szyfrowanie RSA" << endl;
 	cin >> odp;
 	if (odp == 1)
 	{
@@ -41,5 +42,9 @@ int main()
 	{
 		cout << endl << "Ktorys z tych ciagow jest poprawny" << endl;
 		cout << zmienna.odszyfrowanie(ciag);
+	}
+	else if (odp == 5)
+	{
+		tekst_wyjsciowy = zmienna.szyfrowanie_rsa(ciag);
 	}
 }

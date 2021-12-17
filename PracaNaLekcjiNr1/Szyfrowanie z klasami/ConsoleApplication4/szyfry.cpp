@@ -85,3 +85,34 @@ string szyfry::odszyfrowanie(string ciag3)
 	}
 	return ciag3;
 }
+
+
+string szyfry::szyfrowanie_rsa(string ciag4)
+{
+	int l1, l2;
+	
+	cout << "Podaj liczbe";
+	cin >> l1;
+	cout << "Znowu podaj";
+	cin >> l2;
+	
+	int n = l1 * l2;
+	int cg = (l1 - 1) * (l2 - 1);
+	
+	cout << "Wybierz liczbe od 1 do " << cg << ". Liczby e i " << cg << " powinny byz pierwsze";
+	
+	int e; cin >> e;
+	int d; d = modInverse(e, cg);
+
+	pair<int, int> publiczny;
+	publiczny.first = n;
+	publiczny.second = e;
+	cout << "Klucz publiczny: " << publiczny.first << "   " << publiczny.second << endl;
+	
+	pair<int, int> prywatny;
+	prywatny.first = n;
+	prywatny.second = d;
+	cout << "Klucz prywatny: " << prywatny.first << "   " << prywatny.second << endl;
+	
+	return "";
+}

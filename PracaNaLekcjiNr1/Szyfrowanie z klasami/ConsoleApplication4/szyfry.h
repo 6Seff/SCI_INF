@@ -7,6 +7,7 @@ public:
 	string podstawieniowy(string ciag1);
 	string przestawieniowy(string ciag2);
 	string odszyfrowanie(string ciag3);
+	string szyfrowanie_rsa(string ciag4);
 
 };
 
