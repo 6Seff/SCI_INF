@@ -1,3 +1,8 @@
-﻿  ConsoleApplication7.cpp
-e:\consoleapplication7\consoleapplication7\consoleapplication7.cpp(12): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
-  ConsoleApplication7.vcxproj -> E:\ConsoleApplication7\Debug\ConsoleApplication7.exe
+﻿  mies.cpp
+c:\users\armagedon\desktop\zadanko\sortowanie\consoleapplication7\mies.cpp(8): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+c:\users\armagedon\desktop\zadanko\sortowanie\consoleapplication7\mies.cpp(10): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+c:\users\armagedon\desktop\zadanko\sortowanie\consoleapplication7\mies.cpp(21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+c:\users\armagedon\desktop\zadanko\sortowanie\consoleapplication7\mies.cpp(34): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+c:\users\armagedon\desktop\zadanko\sortowanie\consoleapplication7\mies.cpp(47): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+c:\users\armagedon\desktop\zadanko\sortowanie\consoleapplication7\mies.cpp(114): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  ConsoleApplication7.vcxproj -> C:\Users\armagedon\Desktop\zadanko\Sortowanie\Debug\ConsoleApplication7.exe

@@ -50,5 +50,71 @@ int mies::karty(vector <int> losowe2)
 		    cout << losowe2[i] <<endl;
 	    }
 	
-	   return 0;
+		return 0;
 }
+
+void mies::szybkie(vector <int>& sorto, int left, int right)
+{
+	int i = (left + right) / 2;
+	int piwot = sorto[i];
+	sorto[i] = sorto[right];
+	int j = left;
+
+	for (i = left; i < right; i++)
+	{
+
+		if (sorto[i] < piwot)
+
+		{
+
+			int temp = sorto[i];
+			sorto[i] = sorto[j];
+			sorto[j] = temp;
+			j++;
+
+		}
+
+	}
+
+	sorto[right] = sorto[j];
+
+	sorto[j] = piwot;
+
+	if (left < j - 1)
+	{
+
+		szybkie(sorto, left, j - 1);
+
+	}
+
+	if (j + 1 < right)
+	{
+
+		szybkie(sorto, j + 1, right);
+
+	}
+
+
+}
+
+int mies::wybieranie(vector <int> sortowanie)
+{
+	int size = sortowanie.size();
+
+	int k;
+	for (int i = 0; i < size; i++)
+	{
+		k = i;
+		for (int j = i + 1; j < size; j++)
+			if (sortowanie[j] < sortowanie[k])
+				k = j;
+
+		swap(sortowanie[k], sortowanie[i]);
+	}
+	for (int i = 0; i < sortowanie.size(); i++)
+	{
+		cout << sortowanie[i] << endl;
+	}
+	return 0;
+}
+

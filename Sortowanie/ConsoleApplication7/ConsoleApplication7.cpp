@@ -9,6 +9,7 @@ mies kod;
 
 int main()
 {
+	int lewy = 0;
 	srand(time(NULL));
 	int a=1;
 	vector <int> losowe;
@@ -19,11 +20,15 @@ int main()
 		losowe.push_back(a);
 		cout << losowe[i] << endl;
 	}
+
+	int prawy = (losowe.size() - 1);
 	
 	int wyb;
 	cout << endl << "Wybierz sortowanie:" << endl;
 	cout << "1.Bobelkowe" << endl;
-	cout << "2.Karty" << endl << endl;
+	cout << "2.Wstawieniowe" << endl;
+	cout << "3.Szybkie" << endl;
+	cout << "4." << endl;
 	cin >> wyb;
 	cout << endl;
 
@@ -35,6 +40,22 @@ int main()
 	if (wyb == 2)
 	{
 		cout << kod.karty(losowe);
+	}
+
+	if (wyb == 3)
+	{
+		kod.szybkie(losowe, lewy, prawy);
+
+		for (int h = 0; h < losowe.size(); h++)
+		{
+			cout << losowe[h] << endl;
+		}
+
+	}
+
+	if (wyb == 4)
+	{
+		cout << kod.wybieranie(losowe);
 	}
 
 }
